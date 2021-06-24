@@ -9,18 +9,24 @@ boiler plate for make REST API using Python Flask Framework
 
 Installation in **linux**,
 
-First include the python to venv
+First, include the venv in current project
 
 ```
 virtualenv venv
 ```
 
-And activate the venv
+Second, activate the venv
 
 ```
 source venv/bin/activate
-pip install -r requirement.txt
 ```
+
+Third, Install project dependency based on requirements
+
+```
+pip install -r requirements.txt
+```
+
 
 Copy .env.example to .env then open .env file, change the config environment
 
