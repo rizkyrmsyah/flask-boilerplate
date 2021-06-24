@@ -12,19 +12,19 @@ Installation in **linux**,
 First, include the venv in current project
 
 ```
-virtualenv venv
+$ virtualenv venv
 ```
 
 Second, activate the venv
 
 ```
-source venv/bin/activate
+$ source venv/bin/activate
 ```
 
 Third, Install project dependency based on requirements
 
 ```
-pip install -r requirements.txt
+(venv) $ pip install -r requirements.txt
 ```
 
 
@@ -37,7 +37,7 @@ Copy .env.example to .env then open .env file, change the config environment
 Run the project
 
 ```
-flask run
+(venv) $ flask run
 ```
 
 You can see which port the api server running
