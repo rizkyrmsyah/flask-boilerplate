@@ -9,35 +9,35 @@ boiler plate for make REST API using Python Flask Framework
 
 Installation in **linux**,
 
-First, include the venv in current project
+1. Init venv to current project
 
 ```
 $ virtualenv venv
 ```
 
-Second, activate the venv
+2. Activate the venv
 
 ```
 $ source venv/bin/activate
 ```
 
-Third, Install project dependency based on requirements
+3. Install project dependency based on requirements
 
 ```
-(venv) $ pip install -r requirements.txt
+(venv)$ pip install -r requirements.txt
 ```
 
 
-Copy .env.example to .env then open .env file, change the config environment
+4. Copy .env.example to .env then open .env file, change the config environment
 
 
 
-# Usage
+## Usage
 
 Run the project
 
 ```
-(venv) $ flask run
+(venv)$ flask run
 ```
 
 You can see which port the api server running
