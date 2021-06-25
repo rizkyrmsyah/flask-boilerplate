@@ -21,8 +21,8 @@ class Configuration(object):
     APP_PORT = int(os.getenv("APP_PORT", 5000))
 
     # MYSQL
-    SQLALCHEMY_DATABASE_URI = "pymysql://"+db_username+":" + \
-        db_password+"@"+db_port+":"+db_port+"/"+db_database
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://"+db_username+":" + \
+        db_password+"@"+db_host+":"+db_port+"/"+db_database
     SQLALCHEMY_TRACK_MODIFICATIONS = os.getenv("DB_TRACK_MODIFICATIONS")
 
     # MAILER

@@ -2,6 +2,8 @@ from flask import Flask
 from flask_cors import CORS
 from helpers import sql_alchemy
 from flask_mail import Mail
+from flask_migrate import Migrate
+from models import user
 import routes
 
 cors = CORS()
@@ -25,5 +27,6 @@ def create_app(configuration):
     cors.init_app(app, resources={r"/*": {"origins": "*"}})
     sql_alchemy.init_app(app)
     mail.init_app(app)
+    migrate = Migrate(app, sql_alchemy)
 
     return app
