@@ -31,3 +31,9 @@ class Configuration(object):
     MAIL_ENCRYPTION = os.getenv("MAIL_ENCRYPTION")
     MAIL_USERNAME = os.getenv("MAIL_USERNAME")
     MAIL_PASSWORD = os.getenv("MAIL_PASSWORD")
+
+    # JWT
+    JWT_ALGORITHM = os.getenv("JWT_ALGORITHM")
+    JWT_SECRET = os.getenv("JWT_SECRET")
+    JWT_EXPIRE = os.getenv("JWT_EXPIRE")
+

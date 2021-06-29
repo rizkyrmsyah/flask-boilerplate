@@ -1,5 +1,7 @@
 from .alchemy import sql_alchemy
+from .jwt_helper import jwt_manager
 
 __all__ = [
-    "alchemy"
-]
+    "alchemy",
+    "jwt_helper"
+    ]
